@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap');
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond&display=swap');
+
+body {
+    margin: 0;
+}
+
+main {
+    padding-bottom: 4em;
+}
+
+header {
+    text-align: center;
+    padding: 4em 1em 2em;
+    background-color: slategrey;
+}
+
+section {
+    padding: 1em 5em;
+}
+
+article {
+    padding: 1em 5em;
+}
+
+.two-columns {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer {
+    text-align: center;
+    padding: 1em 1em 3em;
+    background-color: lightgray;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+img {
+    width: 100%;
+}
+
+th {
+    padding: 0 1em 0 0;
+}
+
+td {
+    padding: 0 1em 0 0;
+}
+
+h1 {
+    font-family: 'Libre Baskerville', sans-serif;
+    color: white;
+}
+
+h2 {
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+h3 {
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+p {
+    font-family: 'EB Garamond', serif;
+    font-size: 1.2em;
+}
+
+figcaption {
+    font-family: 'EB Garamond', serif;
+    text-align: center;
+}
+
+footer p {
+    font-size: 1em;
+}
+
+label {
+    font-family: 'EB Garamond', serif;
+}
+
+input, select {
+    font-family: 'EB Garamond', serif;
+    font-size: 1em;
+}
+
+a {
+    color: black;
+}
+
+a:hover {
+    background-color: lightgray;
+}
+
+ul li {
+    font-family: 'EB Garamond', serif;
+    font-size: 1.2em;
+}
+
+nav ul {
+    display: flex;
+    justify-content: left;
+}
+
+nav ul li {
+    list-style-type: none
+}
+
+th {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 1.2em;
+}
+
+td {
+    font-family: 'EB Garamond', serif;
+    font-size: 1.2em;
+}
+
+#priority {
+    background-color: white;
+    border-style: solid;
+    border-color: #8e8e9d;
+    border-width: thin;
+    border-radius: 2px;
+}
+
+.priority {
+    background-color: white;
+    border-style: solid;
+    border-color: #8e8e9d;
+    border-width: thin;
+    border-radius: 2px;
+}
