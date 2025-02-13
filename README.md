@@ -4,12 +4,12 @@ Assignment A4 - Web Component Framework
 
 Due: Monday, February 17th, by 11:59 AM.
 
-For this assignment you will re-implement Assignment A3 using React components, a style framework, MongoDB, and either 
+For this assignment you will re-implement Assignment A3 using React components, a style framework, MongoDB, and either
 1. the React framework, Express, and Passport GitHub authentication, or
 2. the NextJS framework with NextAuth for authentication
-Please keep in mind that implementing authentication is challenging and can be frustrating to debug. Please start this
-assignment early! You may deploy this project on any hosting service (Glitch, DigitalOcean, Heroku etc.).
-However, make sure to push your final application to your assignment GitHub repo so the course staff can review the code.
+   Please keep in mind that implementing authentication is challenging and can be frustrating to debug. Please start this
+   assignment early! You may deploy this project on any hosting service (Glitch, DigitalOcean, Heroku etc.).
+   However, make sure to push your final application to your assignment GitHub repo so the course staff can review the code.
 
 Deliverables
 ---
@@ -27,6 +27,6 @@ Sample Readme (delete the above when you're ready to submit, and modify the belo
 
 your hosting link e.g. http://a4-wilsonwong.glitch.me
 
-Include a very brief summary of your project here and what you changed / added to assignment #3. 
+Include a very brief summary of your project here and what you changed / added to assignment #3.
 
 Unlike previous assignments, this assignment will be solely graded on whether or not you successfully complete it. Partial credit will be generously given.

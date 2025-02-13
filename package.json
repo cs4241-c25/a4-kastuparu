@@ -1,20 +1,54 @@
 {
-  "name": "cs4241-c25-a4-components",
-  "version": "0.1.0",
-  "description": "WPI CS4241-C25 Assignment A4",
-  "author": "Katy Stuparu",
+  "name": "express-react-template",
+  "version": "1.0.0",
+  "description": "Express and React template",
+  "main": "index.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node index.js",
+    "build": "cross-env NODE_ENV=\"production\" webpack --config client/webpack.config.js -p",
+    "dev": "cross-env NODE_ENV=\"development\" nodemon --ignore ./client/ index.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codingjlu/express-react-template.git"
+  },
+  "keywords": [
+    "express",
+    "react",
+    "template",
+    "babel",
+    "webpack"
+  ],
+  "author": "codingjlu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/codingjlu/express-react-template/issues"
+  },
+  "homepage": "https://github.com/codingjlu/express-react-template#readme",
   "dependencies": {
-    "express": "^4.21.2",
+    "axios": "^1.7.9",
+    "express": "^4.17.3",
     "express-session": "^1.18.1",
-    "mime": "^2.4.4",
     "mongodb": "^6.13.0",
     "passport": "^0.7.0",
-    "passport-github2": "^0.1.12"
+    "passport-github2": "^0.1.12",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
   },
-  "engines": {
-    "node": "22.x"
+  "devDependencies": {
+    "@babel/core": "^7.17.5",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-react": "^7.16.7",
+    "@svgr/webpack": "^6.2.1",
+    "babel-loader": "^8.2.3",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.0.0",
+    "html-webpack-plugin": "^5.5.0",
+    "nodemon": "^2.0.15",
+    "url-loader": "^4.1.1",
+    "webpack": "^5.70.0",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-middleware": "^5.3.1",
+    "webpack-hot-middleware": "^2.25.1"
   }
 }
