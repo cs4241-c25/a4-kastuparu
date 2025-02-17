@@ -26,7 +26,13 @@
   },
   "homepage": "https://github.com/codingjlu/express-react-template#readme",
   "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@material/data-table": "^14.0.0",
+    "@mui/material": "^6.4.4",
+    "@mui/x-date-pickers": "^7.27.0",
     "axios": "^1.7.9",
+    "dayjs": "^1.11.13",
     "express": "^4.17.3",
     "express-session": "^1.18.1",
     "mongodb": "^6.13.0",
