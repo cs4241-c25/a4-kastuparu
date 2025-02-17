@@ -11,7 +11,7 @@ module.exports = {
   devtool: dev ? "inline-source-map" : undefined,
   entry: [...hmrPlugins, path.join(__dirname, "src", "index.js")],
   output: {
-    path: path.resolve(__dirname, "dist"),
+    path: path.resolve(__dirname),
     filename: "bundle.[contenthash].js",
     clean: true,
     publicPath: "/",
