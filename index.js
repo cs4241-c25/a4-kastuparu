@@ -8,6 +8,7 @@ const passport = require('passport')
 const GitHubStrategy = require('passport-github2').Strategy
 
 const port = process.env.PORT || 3000
+const homepage = 'https://a4-katy-stuparu.vercel.app'
 
 const app = express();
 app.use(express.json());
@@ -35,7 +36,7 @@ passport.deserializeUser(function(user, done) {
 passport.use(new GitHubStrategy({
       clientID: "Ov23ligcrK5lBzQUaOh7",
       clientSecret: "dd98814abc885a8837fb1997e3bc39e48f47cc1f",
-      callbackURL: "/api/login/callback"
+      callbackURL: homepage + "/api/login/callback"
     },
     function verify(accessToken, refreshToken, profile, done) {
       return done(null, profile)
@@ -57,15 +58,15 @@ app.get('/', (req, res) => {
 
 app.get('/api/login', passport.authenticate('github'))
 
-app.get('/api/login/callback', passport.authenticate('github', { failureRedirect: '/' }),
+app.get('/api/login/callback', passport.authenticate('github', { failureRedirect: homepage }),
     function(req, res) {
       console.log("logged in!")
-      res.redirect('/')
+      res.redirect(homepage)
     })
 
 app.get('/api/logout', function(req, res){
   req.logout(() => {
-    res.redirect('/')
+    res.redirect(homepage)
   })
 })
 
